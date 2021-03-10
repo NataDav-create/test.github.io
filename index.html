@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <div class="figure__wrapper">
+    <figure class="pie-chart">
+      <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="white"
+          stroke-width="1"></circle>
+        <circle class="donut-segment pie2" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#dfd816"
+          stroke-width="1" stroke-dasharray="40 60" stroke-dashoffset="20"></circle>
+        <circle class="donut-segment pie3" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#70a74b"
+          stroke-width="1" stroke-dasharray="30 70" stroke-dashoffset="85"></circle>
+        <circle class="donut-segment pie4" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ececec"
+          stroke-width="1" stroke-dasharray="27 73" stroke-dashoffset="60"></circle>
+        <!-- unused 10% -->
+      </svg>
+
+      <img class="pie__img pie__img-animated" src="images/loyalty.svg" alt="">
+      <figcaption>
+        <p class="pie-quantity total" data-start="0" data-end="72.7">72.<span>7</span>
+          <sup class="pie-procent">%</sup></p>
+        <strong class="pie-heading">Лояльность</strong>
+        <p class="pie-heading__descr">ниже среднего</p>
+        <p class="pie__text">по отрасли: FMCG</p>
+        <p class="pie__text">значений слева от медианы</p>
+        <P class="pie__text">52.08%-83.1%</P>
+        <div class="pie-statistic">
+          <div class="pie-triangle"></div>
+          <span>3.1</span>
+        </div>
+      </figcaption>
+    </figure>
+
+
+    <div class="audience__inner">
+      <div class="audience__inner-item">
+        <p class="audience__inner-item__name">Промоутеры</p>
+        <div class="audience__inner-item__data">
+          <p class="audience__data-procent">32,0%</p>
+          <p class="audience__data-number">81</p>
+        </div>
+        <div class="audience__inner-item__difference audience__inner-item__difference--green">
+          <div class="span__wrapper">
+            <span></span>
+            <span></span>
+          </div>
+          +1,2%
+        </div>
+      </div>
+      <div class="audience__inner-item">
+        <p class="audience__inner-item__name">Скептики</p>
+        <div class="audience__inner-item__data">
+          <p class="audience__data-procent">39,1%</p>
+          <p class="audience__data-number">8</p>
+        </div>
+        <div class="audience__inner-item__difference audience__inner-item__difference--yellow">
+          <div class="span__wrapper">
+            <span></span>
+            <span></span>
+          </div>
+          +4,8%
+        </div>
+      </div>
+      <div class="audience__inner-item">
+        <p class="audience__inner-item__name">Критики</p>
+        <div class="audience__inner-item__data">
+          <p class="audience__data-procent">79,8%</p>
+          <p class="audience__data-number">7</p>
+        </div>
+        <div class="audience__inner-item__difference audience__inner-item__difference--red">
+          <div class="span__wrapper">
+            <span></span>
+            <span></span>
+          </div>
+          -9,7%
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
